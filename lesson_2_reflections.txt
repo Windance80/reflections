@@ -14,3 +14,7 @@
 What are some situations when branches would be helpful in keeping your history organized? How would branches help?
 
  Branches help when need to add features or translate diff languange, by brancing and keeping the master project intact.
+
+How do the diagrams help you visualize the branch structure?
+
+ It helps which branches goes to which commits

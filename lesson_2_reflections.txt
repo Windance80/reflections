@@ -6,3 +6,7 @@
 
   Staging are for files that is about to be committed, Working directory is the physical file on directory.
   It offers flexibility to add manually, instead automatically from git.
+
+ How can you use the staging area to make sure you have one commit per logical change?
+
+  By adding with git add to the staging area, and check it using git diff, this will compare what file has been change by comparing staging area with working directory.

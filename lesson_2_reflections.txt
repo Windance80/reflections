@@ -2,4 +2,7 @@
 
   Git create a new empty Git repository, needed because want to track what has been changed.
 
-  
+ How is the staging area different from the working directory and the repository? What value do you think it offers?
+
+  Staging are for files that is about to be committed, Working directory is the physical file on directory.
+  It offers flexibility to add manually, instead automatically from git.

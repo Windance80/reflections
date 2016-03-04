@@ -1,15 +1,3 @@
-Setting Up Gitbash and Sublime(All files are under Google Drive/Projects/Git):
-0. Download and intall both default setting
-1. Copy git-completion.bash to home directory #It is for completion tab
-2. Copy git-prompt.sh to home directory #Custom prompt very handy
-3. Copy or replace .bash_profile #For setting up prompt
-4. run "git config --global core.editor "'sublime_text.exe path' -n -w"
-	-n #Open new window
-	-w #Wait for sublime to close
-5. add "alias subl="C:/Program\ Files/Sublime\ Text\ 2/sublime_text.exe" to .bash_profile to shortcut sublime in git bash
-6. run "git config --global push.default upstream"
-7. run "git config --global merge.conflictstyle diff3"
-
 Syntaxs:
 $ FC 
 	# File compare command prompt in windows for comparing two files
@@ -19,6 +7,8 @@ $ pwd
 	# Shows working directory
 $ ls
 	# List the files in this directory
+$ ls -a
+	# Display hidden files also
 $ cd ~
     # change directories to your home directory
 $ mkdir "name"         
@@ -27,18 +17,31 @@ $ cd C:/Program\ Files\ \(x86\)/
 	# go to "C:/Program Files (x86)/" directory
 $ git version
 	# Check git version
+
 $ git log
 	# To see every commit from start
 $ git log --stat
 	# Statistic of files in each commit
+$ git log --graph --oneline "label_name1" "label_name2"
+	# Visualize branch structure between "label_name1" and "label_name2",  --oneline: to make easier to read
 $ q
 	# Quit the log
+
+$ git diff
+	# Compare staging area with working directory
 $ git diff "commit1" "commit2"
-	# Comparin commit2 to commit1
+	# Compare commit2 to commit1
+$ git diff --staged
+	# Compare Repository with Staging Area
+
 $ git clone "url"
 	# To clone repository
+
 $ git config --global color.ui.auto
 	# To get colored diff output
+
+$ git checkout "branch_label"
+	# To attached HEAD
 $ git checkout "commit"
 	# Checking the commit
 

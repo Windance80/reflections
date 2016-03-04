@@ -1,0 +1,12 @@
+Setting Up Gitbash and Sublime(All files are under Google Drive/Projects/Git):
+0. Download and intall both default setting
+1. Copy git-completion.bash to home directory #It is for completion tab
+2. Copy git-prompt.sh to home directory #Custom prompt very handy
+3. Copy or replace .bash_profile #For setting up prompt
+4. run "git config --global core.editor "'sublime_text.exe path' -n -w"
+	-n #Open new window
+	-w #Wait for sublime to close
+5. add "alias subl="C:/Program\ Files/Sublime\ Text\ 2/sublime_text.exe" to .bash_profile to shortcut sublime in git bash
+6. run "git config --global push.default upstream"
+7. run "git config --global merge.conflictstyle diff3"
+8. run "git config --global core.autocrlf true", for windows user that wants to compare file created in OSX, new Line char LF, CRLF

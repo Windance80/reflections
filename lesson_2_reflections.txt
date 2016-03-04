@@ -1,7 +1,36 @@
-Syntax:
+Syntaxs:
 $ git init 
-	#Create an empty repository in current directory
+	# Create an empty repository in current directory
+$ git status
+	# Show files that changed since the last commit
+$ git add "file_name"
+	# To add the file to staging area before being committed
 
+$ git reset "file_name"
+	# Remove the file from staging area
+$ git reset --hard
+	# Remove every changes to Working directory and Stagin Area with Repository
+
+$ git commit -m "Commit_message"'
+	# Commit the the files in staging area, -m specify commit message line
+
+$ git branch
+	# Shows the all branch
+$ git branch "label_name"
+	# Create a new branch with "label_name"
+$ git branch -d "label_name"
+	# -d, delete the branch "label_name"
+
+$ git merge "label_name1" "label_name2"
+	# Merge "label_name1" and "label_name2" and update the current checkout branch to point to the merge version
+$ git merge --abort
+	# Restore files to their state before the merge, if there was an error
+
+$ git show "commit"
+	# Compare "commit" with the parent
+
+$ git gc
+	# Runs Git's garbage collection
 
 
  What happens when you initialize a repository? Why do you need to do it?

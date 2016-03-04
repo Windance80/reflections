@@ -11,3 +11,7 @@ $ git remote -v
 $ git push "remote_name" "branch_name"
 	# Copy all the commits reachable from "branch_name" to "remote_name"
 	# "remote_name", github repository
+	
+Reflections:
+When would you want to use a remote repository rather than keeping all your work local?
+	When doing a project that shared with others

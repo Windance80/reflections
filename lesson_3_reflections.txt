@@ -1,13 +1,13 @@
 Syntax:
 $ git remote 	
-	#To view the current remote
-
+	# To view the current remote
 $ git remote add "name" "url" 
-	#To add Github repo as a remote on local
-	#"name" is origin if only have one remote
-	#"url" is from Github web
-
+	# To add Github repo as a remote on local
+	# "name" is origin if only have one remote
+	# "url" is from Github web
 $ git remote -v 
-	#More info on remote
+	# More info on remote
 
-$git push "nremote_name" "branch_name"
+$ git push "remote_name" "branch_name"
+	# Copy all the commits reachable from "branch_name" to "remote_name"
+	# "remote_name", github repository

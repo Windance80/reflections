@@ -24,7 +24,7 @@ $ git branch -d "label_name"
 $ git merge "label_name1" "label_name2"
 	# Merge "label_name1" and "label_name2" and update the current checkout branch to point to the merge version
 $ git merge --abort
-	# Restore files to their state before the merge, if there was an error
+	# Restore files to their state before the merge, if there was a conflict detected
 
 $ git show "commit"
 	# Compare "commit" with the parent

@@ -11,7 +11,14 @@ $ git remote -v
 $ git push "remote_name" "branch_name"
 	# Copy all the commits reachable from "branch_name" to "remote_name"
 	# "remote_name", github repository
+
+$ git pull "remote_name" "branch_name"
+	# Pull all "branch_name" branch on "remote_name" to local repository
 	
 Reflections:
 When would you want to use a remote repository rather than keeping all your work local?
 	When doing a project that shared with others
+
+Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository?
+	Because the change made it local repository might get lost
+

@@ -1,3 +1,9 @@
+Syntax:
+$ git init 
+	#Create an empty repository in current directory
+
+
+
  What happens when you initialize a repository? Why do you need to do it?
 
   Git create a new empty Git repository, needed because want to track what has been changed.

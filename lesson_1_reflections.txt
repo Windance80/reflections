@@ -1,3 +1,48 @@
+Setting Up Gitbash and Sublime(All files are under Google Drive/Projects/Git):
+0. Download and intall both default setting
+1. Copy git-completion.bash to home directory #It is for completion tab
+2. Copy git-prompt.sh to home directory #Custom prompt very handy
+3. Copy or replace .bash_profile #For setting up prompt
+4. run "git config --global core.editor "'sublime_text.exe path' -n -w"
+	-n #Open new window
+	-w #Wait for sublime to close
+5. add "alias subl="C:/Program\ Files/Sublime\ Text\ 2/sublime_text.exe" to .bash_profile to shortcut sublime in git bash
+6. run "git config --global push.default upstream"
+7. run "git config --global merge.conflictstyle diff3"
+
+Syntaxs:
+$ FC 
+	# File compare command prompt in windows for comparing two files
+$ diff 
+	# File compare in linux
+$ pwd 
+	# Shows working directory
+$ ls
+	# List the files in this directory
+$ cd ~
+    # change directories to your home directory
+$ mkdir "name"         
+	# make directory
+$ cd C:/Program\ Files\ \(x86\)/
+	# go to "C:/Program Files (x86)/" directory
+$ git version
+	# Check git version
+$ git log
+	# To see every commit from start
+$ git log --stat
+	# Statistic of files in each commit
+$ q
+	# Quit the log
+$ git diff "commit1" "commit2"
+	# Comparin commit2 to commit1
+$ git clone "url"
+	# To clone repository
+$ git config --global color.ui.auto
+	# To get colored diff output
+$ git checkout "commit"
+	# Checking the commit
+
+
 What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google Docs does?
 
  Manually for coding program is much better, cause we can determine when to commit instead of doing it auto which can get the code become useless

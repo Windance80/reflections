@@ -1,0 +1,111 @@
+Leeson 1
+Syntaxs:
+$ FC 
+	# File compare command prompt in windows for comparing two files
+$ diff 
+	# File compare in linux
+$ pwd 
+	# Shows working directory
+$ ls
+	# List the files in this directory
+$ ls -a
+	# Display hidden files also
+$ cd ~
+    # change directories to your home directory
+$ mkdir "name"         
+	# make directory
+$ cd C:/Program\ Files\ \(x86\)/
+	# go to "C:/Program Files (x86)/" directory
+$ git version
+	# Check git version
+
+$ git log
+	# To see every commit from start
+$ git log --stat
+	# Statistic of files in each commit
+$ git log --graph --oneline "label_name1" "label_name2"
+	# Visualize branch structure between "label_name1" and "label_name2",  --oneline: to make easier to read
+$ git log "remote_name/branch"
+	# Shows local copies of "remote_name/branch"
+$ q
+	# Quit the log
+
+$ git diff
+	# Compare staging area with working directory
+$ git diff "commit1" "commit2"
+	# Compare commit2 to commit1
+$ git diff --staged
+	# Compare Repository with Staging Area
+$ git diff "remote_name/branch" "branch_name"
+	# Compare local copies of "remote_name/branch" to current "branch_name"
+
+$ git clone "url"
+	# To clone repository
+	# Automatically setting the remote
+
+$ git config --global color.ui.auto
+	# To get colored diff output
+
+$ git checkout "branch_label"
+	# To attached HEAD
+$ git checkout "commit"
+	# Checking the commit
+
+Lesson 2
+$ git init 
+	# Create an empty repository in current directory
+$ git status
+	# Show files that changed since the last commit
+$ git add "file_name"
+	# To add the file to staging area before being committed
+
+$ git reset "file_name"
+	# Remove the file from staging area
+$ git reset --hard
+	# Remove every changes to Working directory and Stagin Area with Repository
+
+$ git commit -m "Commit_message"'
+	# Commit the the files in staging area, -m specify commit message line
+
+$ git branch
+	# Shows the all branch
+$ git branch "label_name"
+	# Create a new branch with "label_name"
+$ git branch -d "label_name"
+	# -d, delete the branch "label_name"
+$ git branch -a 
+	# -a, Shows both local and remote branches
+
+$ git merge "label_name1" "label_name2"
+	# Merge "label_name1" and "label_name2" and update the current checkout branch to point to the merge version
+$ git merge --abort
+	# Restore files to their state before the merge, if there was a conflict detected
+
+$ git show "commit"
+	# Compare "commit" with the parent
+
+$ git gc
+	# Runs Git's garbage collection
+
+Lesson 3
+$ git remote 	
+	# To view the current remote
+$ git remote add "name" "url" 
+	# To add Github repo as a remote on local
+	# "name" is origin if only have one remote
+	# "url" is from Github web
+$ git remote -v 
+	# More info on remote
+
+$ git push "remote_name" "branch_name"
+	# Copy all the commits reachable from "branch_name" to "remote_name"
+	# "remote_name", github repository
+
+$ git pull "remote_name" "branch_name"
+	# Pull all "branch_name" branch on "remote_name" to local repository
+	# is the same with
+		$ git fetch "remote_name", and
+		$ git merge "current_branch" "remote_name/branch_name"
+
+$ git fetch "remote_name"
+	# Update all the local copies for the "remote_name"

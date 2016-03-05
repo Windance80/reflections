@@ -11,3 +11,4 @@ Setting Up Gitbash and Sublime(All files are under Google Drive/Projects/Git):
 7. run "git config --global merge.conflictstyle diff3"
 8. run "git config --global core.autocrlf true", for windows user that wants to compare file created in OSX, new Line char LF, CRLF
 9. run "git config --global credential.helper wincred", for windows password caching, don't need password everytime doing changes in GitHub
+10. run "git config --system core.longpaths true", for windows that required long path

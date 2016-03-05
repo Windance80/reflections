@@ -1,20 +1,3 @@
-Syntax:
-$ git remote 	
-	# To view the current remote
-$ git remote add "name" "url" 
-	# To add Github repo as a remote on local
-	# "name" is origin if only have one remote
-	# "url" is from Github web
-$ git remote -v 
-	# More info on remote
-
-$ git push "remote_name" "branch_name"
-	# Copy all the commits reachable from "branch_name" to "remote_name"
-	# "remote_name", github repository
-
-$ git pull "remote_name" "branch_name"
-	# Pull all "branch_name" branch on "remote_name" to local repository
-	
 Reflections:
 When would you want to use a remote repository rather than keeping all your work local?
 	When doing a project that shared with others
@@ -22,3 +5,19 @@ When would you want to use a remote repository rather than keeping all your work
 Why might you want to always pull changes manually rather than having Git automatically stay up-to-date with your remote repository?
 	Because the change made it local repository might get lost
 
+Describe the differences between forks, clones, and branches. When would you use one instead of another?
+	clones: clone the repository from the github
+	branches: branches track the commit
+	forks: clone the repository to github
+		use clones when cloning the repository into local
+		use branches when adding a new feature or making a different version
+		use forks when changing another repository on github
+
+What is the benefit of having a copy of the last known state of the remote stored locally?
+	To keep track if the online repository has been change through git fetch "remote_name"
+
+How would you collaborate without using Git or GitHub? What would be easier, and what would be harder?
+	Using Google Drive, OneDrive, DropBox. I imagined it's hard to keep track what changes without Git or GitHub
+
+When would you want to make changes in a separate branch rather than directly in master? What benefits does each approach have?
+	When I want to add features, or I wanna change things without impacting master, the benefits is that I can checkout my main version back to where it was.

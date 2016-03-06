@@ -58,7 +58,13 @@ $ git status
 	# Show files that changed since the last commit
 $ git add "file_name"
 	# To add the file to staging area before being committed
-
+$ git add . and git add -A 
+	# add new/modified/deleted files in the current directory
+$ git add --ignore-removal
+	# adds new/modified files in the current directory
+$ git add -u 
+	# adds modified/deleted files in the current directory
+	
 $ git reset "file_name"
 	# Remove the file from staging area
 $ git reset --hard

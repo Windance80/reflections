@@ -65,11 +65,29 @@ $ git add --ignore-removal
 $ git add -u 
 	# adds modified/deleted files in the current directory
 	
+$ git clean -f -n
+	# to show what will be deleted by using the -n option
+$ git clean -f
+	# Clean Step - beware: this will delete files:
+$ git clean -f -d or git clean -fd
+	# To remove directories 
+$ git clean -f -X or git clean -fX 
+	# To remove ignored files
+$ git clean -f -x or git clean -fx 
+	# To remove ignored and non-ignored files
+	
 $ git reset "file_name"
 	# Remove the file from staging area
 $ git reset --hard
 	# Remove every changes to Working directory and Stagin Area with Repository
 
+$ git checkout master~1            # Checkout previous commit on master
+$ git checkout -b new_master       # Create branch for new master
+$ git branch -D master             # Delete old master
+$ git branch -mv new_master master # Make new_master master
+
+$ git reset --hard master~1        # Reset current branch to one commit ago on master	
+	
 $ git commit -m "Commit_message"'
 	# Commit the the files in staging area, -m specify commit message line
 
@@ -115,3 +133,5 @@ $ git pull "remote_name" "branch_name"
 
 $ git fetch "remote_name"
 	# Update all the local copies for the "remote_name"
+
+	

@@ -64,6 +64,9 @@ $ git add --ignore-removal
 	# adds new/modified files in the current directory
 $ git add -u 
 	# adds modified/deleted files in the current directory
+
+$ git checkout -- <file>
+	# to discard changes in working directory
 	
 $ git clean -f -n
 	# to show what will be deleted by using the -n option

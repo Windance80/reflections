@@ -137,4 +137,7 @@ $ git pull "remote_name" "branch_name"
 $ git fetch "remote_name"
 	# Update all the local copies for the "remote_name"
 
+$ git branch -f remote_branch_name origin/remote_branch_name
+$ git checkout remote_branch_name
+	# Tracking remote branch and pulls it, without merging
 	

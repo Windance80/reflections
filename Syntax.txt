@@ -137,6 +137,9 @@ g
 $ git fetch "remote_name"
 	# Update all the local copies for the "remote_name"
 
+$ git branch --set-upstream-to origin/master
+	# set upstream for git status to show ahead or behind from remote branch
+
 $ git branch -f remote_branch_name origin/remote_branch_name
 $ git checkout remote_branch_name
 	# Tracking remote branch and pulls it, without merging
